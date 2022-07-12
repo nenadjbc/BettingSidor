@@ -54,6 +54,7 @@ nav i{
     position: fixed;
     bottom: 0;
     width: 100vw;
+    height: 70px;
 }
 
 .filter{
@@ -86,7 +87,7 @@ nav i{
     z-index: 998;
     display: flex;
     flex-direction: column;
-    padding: 10px 0;
+    padding-bottom: 10px;
     color: #fff;
     font-size: 13px;
     overflow: hidden;
@@ -95,9 +96,13 @@ nav i{
     opacity: 0.1;
 }
 
+.fa-xmark-large{
+    color: #008000;
+}
+
 .navmenu.active{
     max-height: 80vh;
-    top: 50px;
+    top: 45px;
     z-index: 998;
     transition: all 0.3s ease;
     opacity: 1;
@@ -106,6 +111,14 @@ nav i{
 .breadcrumbs{
     padding: 0 10px;
     line-height: 20px;
+    margin: 20px 0;
+}
+
+.navitems{
+    overflow-y: scroll;
+    position: relative;
+    padding: 10px 0;
+    -webkit-mask-image: linear-gradient(180deg, rgba(24,26,24,0) 0%, rgba(24,26,24,1) 5%, rgba(24,26,24,1) 90%, rgba(24,26,24,0) 100%);
 }
 
 .navitem{
@@ -113,7 +126,11 @@ nav i{
     flex-direction: row;
     height: 30px;
     padding: 0 30px;
-    margin-top: 20px;
+    margin: 20px 0;
+}
+
+.navline{
+    -webkit-mask-image: linear-gradient(90deg, rgba(24,26,24,0) 0%, rgba(24,26,24,1) 5%, rgba(24,26,24,1) 95%, rgba(24,26,24,0) 100%);
 }
 
 .link{
@@ -198,7 +215,7 @@ h2{
     margin-top: 12px;
     border-radius: 6px;
     position: relative;
-    background: #efefef;
+    background: #fff;
     display: flex;
     flex-direction: column;
     justify-content: space-between;

@@ -20,12 +20,12 @@ $('#opennav').on('click', function(e){
 });
 
 $("#opennav").click(function(event) {
-    if($('#opennav').hasClass('fa-angle-down')){
-        $('#arrowupdown').removeClass('fa-angle-down');
-        $('#arrowupdown').addClass('fa-angle-up');
+    if($('#hamburger').hasClass('fa-bars')){
+        $('#hamburger').removeClass('fa-bars');
+        $('#hamburger').addClass('fa-xmark-large');
     }
     else{
-        $('#arrowupdown').removeClass('fa-angle-up');
-        $('#arrowupdown').addClass('fa-angle-down');
+        $('#hamburger').removeClass('fa-xmark-large');
+        $('#hamburger').addClass('fa-bars');
     }
 });
